@@ -1,7 +1,7 @@
 import logging
 import random
 import unittest
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 from interface.crm.customer import Customer
 from common import getMobile

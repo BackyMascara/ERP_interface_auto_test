@@ -3,7 +3,7 @@ import unittest
 import urllib.parse
 
 from interface.crm.opportunity import Opportunity
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 import requests
 

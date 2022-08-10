@@ -1,7 +1,7 @@
 import logging
 import unittest
 
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 
 logger = logging.getLogger('logger')

@@ -1,7 +1,7 @@
 import logging
 import unittest
 from conf import config
-from interface.base.login import Login
+from interface.organization.login import Login
 from interface.crm.customer import Customer
 from common import select_mysql
 

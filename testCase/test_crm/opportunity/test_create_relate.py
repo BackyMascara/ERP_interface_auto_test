@@ -1,7 +1,7 @@
 import logging
 import unittest
 
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 from interface.crm.opportunity import Opportunity
 from common import select_mysql

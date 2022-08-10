@@ -4,7 +4,7 @@ import random
 from common.send_method import SendMethod
 from common.getKeyword_forResult import GetKeyword
 from conf import config
-from interface.base.login import Login
+from interface.organization.login import Login
 
 class Customer:
     def __init__(self,url = "{}/crm/customer/".format(config.testIP),method='post'):

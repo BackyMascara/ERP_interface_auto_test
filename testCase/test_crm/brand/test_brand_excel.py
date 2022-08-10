@@ -1,6 +1,6 @@
 import logging
 import unittest
-from interface.base.login import Login
+from interface.organization.login import Login
 from interface.crm.brand import Brand
 from conf import config
 

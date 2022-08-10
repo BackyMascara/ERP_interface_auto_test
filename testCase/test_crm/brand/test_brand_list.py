@@ -2,7 +2,7 @@ import json
 import logging
 import unittest
 from interface.crm.brand import Brand
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 
 logger = logging.getLogger('logger')

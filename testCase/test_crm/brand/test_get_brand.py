@@ -1,7 +1,7 @@
 import unittest
 import urllib.parse
 
-from interface.base.login import Login
+from interface.organization.login import Login
 from conf import config
 from interface.crm.brand import Brand
 import logging
