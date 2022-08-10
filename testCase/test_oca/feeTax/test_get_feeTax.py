@@ -2,7 +2,6 @@ import logging
 import unittest
 
 from interface.organization.login import Login
-from interface.organization.login import Login
 from conf import config
 from interface.oca.feeTax import FeeTax
 from common import select_mysql
