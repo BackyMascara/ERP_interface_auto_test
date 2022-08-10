@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2022-08-10 16:43:17</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:12.807407</p>
-<p class='attribute'><strong>Status:</strong> Pass 37 Error 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2022-08-10 17:08:07</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:13.251008</p>
+<p class='attribute'><strong>Status:</strong> Pass 39</p>
 
 <p class='description'>众灿互动ERP系统</p>
 </div>
@@ -456,39 +456,31 @@ pt2.5:
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>test_crm.companyProtect.test_company_protect.Test_Company_Protect</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
 </tr>
 
-<tr id='ft4.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_company_protect_01: 申请客户保护</div></td>
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_company_protect_01: 申请客户保护</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        pass</a>
 
-    <div id='div_ft4.1' class="popup_window">
+    <div id='div_pt4.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft4.1: Traceback (most recent call last):
-  File "D:\PythonStudy\ERP_interface_auto_test\testCase\test_crm\companyProtect\test_company_protect.py", line 31, in test_company_protect_01
-    companyId = select_mysql.select_records(sql,0,config.crm)[0]
-TypeError: 'NoneType' object is not subscriptable
-Traceback (most recent call last):
-  File "D:\PythonStudy\ERP_interface_auto_test\testCase\test_crm\companyProtect\test_company_protect.py", line 31, in test_company_protect_01
-    companyId = select_mysql.select_records(sql,0,config.crm)[0]
-TypeError: 'NoneType' object is not subscriptable
-
+pt4.1: 
 
         </pre>
     </div>
@@ -757,59 +749,18 @@ pt15.1:
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
+<tr class='passClass'>
+    <td>test_oca.feeTax.test_get_feeTax.Test_Get_FeeTax</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td><a href="javascript:showClassDetail('c17',1)">Detail</a></td>
 </tr>
 
-<tr id='ft17.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_get_feeTax</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.1')" >
-        error</a>
-
-    <div id='div_ft17.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft17.1: ImportError: Failed to import test module: test_oca.feeTax.test_get_feeTax
-Traceback (most recent call last):
-  File "D:\codesoft\Anaconda3\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\codesoft\Anaconda3\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\PythonStudy\ERP_interface_auto_test\testCase\test_oca\feeTax\test_get_feeTax.py", line 4
-    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-    ^
-SyntaxError: invalid syntax
-
-ImportError: Failed to import test module: test_oca.feeTax.test_get_feeTax
-Traceback (most recent call last):
-  File "D:\codesoft\Anaconda3\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\codesoft\Anaconda3\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\PythonStudy\ERP_interface_auto_test\testCase\test_oca\feeTax\test_get_feeTax.py", line 4
-    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-    ^
-SyntaxError: invalid syntax
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt17.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_feeTax_01: 通过id查询抬头详情</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
@@ -858,9 +809,9 @@ pt18.1:
 <tr id='total_row'>
     <td>Total</td>
     <td>39</td>
-    <td>37</td>
+    <td>39</td>
     <td>0</td>
-    <td>2</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>

@@ -27,6 +27,7 @@ class Test_Get_FeeTax(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         logger.info("=======【我方公司】我方公司详情测试结束=======")
+        return
 
     def test_get_feeTax_01(self):
         """通过id查询抬头详情"""
@@ -39,5 +40,5 @@ class Test_Get_FeeTax(unittest.TestCase):
             assert (res["data"]["id"] == ftId),f"{res}"
             logger.info("[测试通过]通过id查询抬头详情")
         except Exception as e:
-            logger.error("[测试失败]通过id查询抬头详情")
+            logger.error(f"[测试失败]通过id查询抬头详情{e}")
             raise e
