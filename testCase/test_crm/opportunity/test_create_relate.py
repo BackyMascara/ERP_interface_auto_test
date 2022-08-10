@@ -12,7 +12,7 @@ class Test_Create_Relate(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.login = Login()
-        cls.access_token = cls.login.get_access_token()
+        cls.access_token = cls.login.get_access_token("xietao")
         cls.headers = {
             "Authorization":cls.access_token
         }

@@ -85,7 +85,7 @@ class Customer:
 
 if __name__ == '__main__':
     login = Login()
-    access_token = login.get_access_token()
+    access_token = login.get_access_token("xietao")
     header = {"Authorization": access_token}
     url = "{}/crm/customer/pageClientQueryList".format(config.testIP)
     customer = Customer(url)

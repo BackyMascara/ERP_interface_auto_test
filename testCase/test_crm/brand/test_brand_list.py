@@ -15,7 +15,7 @@ class Test_Brand_List(unittest.TestCase):
     def setUpClass(cls) -> None:
         # 获取鉴权
         cls.login = Login()
-        cls.access_token = cls.login.get_access_token()
+        cls.access_token = cls.login.get_access_token("xietao")
         cls.headers = {"Authorization": cls.access_token}
         try:
             # 实例化Brand类

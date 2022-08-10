@@ -13,7 +13,7 @@ class Test_Opportunity_List(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.login = Login()
-        cls.access_token = cls.login.get_access_token()
+        cls.access_token = cls.login.get_access_token("xietao")
         cls.headers = {"Authorization": cls.access_token}
         try:
             cls.url = "{}/crm/Opportunity/pageOpportunityList".format(config.testIP)

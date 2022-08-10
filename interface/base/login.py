@@ -26,23 +26,23 @@ class Login:
         """
         return GetKeyword.get_keyword(res,keyword)
 
-    def get_access_token(self):
+    def get_access_token(self,username):
         """
         获得鉴权
         :return: access_token
         """
         data = {
-            "username": "xietao",
+            "username": username,
             "password": "a123456",
             "verificationCode": "悠悠"
         }
         try:
             res = SendMethod.send_method(method=self.method,url=self.url,json=data)
-            assert (res['code'] == '200'),'响应码不是200'
+            assert (res['code'] == '200'),f"{res}"
             return res['data']['access_token']
         except Exception as e:
             raise e
 
 if __name__ == '__main__':
     login = Login()
-    login.get_access_token()
+    login.get_access_token("xietao")

@@ -19,7 +19,7 @@ class Test_Brand_Excel(unittest.TestCase):
     def setUpClass(cls) -> None:
         # 实例化Login类
         cls.login = Login()
-        cls.access_token = cls.login.get_access_token()
+        cls.access_token = cls.login.get_access_token("xietao")
         cls.headers = {"Authorization": cls.access_token}
         try:
             # 实例化Brand类
