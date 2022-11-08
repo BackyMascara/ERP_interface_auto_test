@@ -17,3 +17,5 @@ testdata_dir = os.path.join(project_dir,"data")
 oca = {"host": "192.168.2.120", "user": "root", "password": "123456", "database": "erp_oca", "charset": "utf8"}
 crm = {"host": "192.168.2.120", "user": "root", "password": "123456", "database": "erp_crm", "charset": "utf8"}
 msm = {"host": "192.168.2.120", "user": "root", "password": "123456", "database": "erp_msm", "charset": "utf8"}
+base = {"host": "192.168.2.120", "user": "root", "password": "123456", "database": "erp_base", "charset": "utf8"}
+org = {"host": "192.168.2.120", "user": "root", "password": "123456", "database": "bf_admin", "charset": "utf8"}
